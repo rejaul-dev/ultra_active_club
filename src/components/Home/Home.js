@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="lg:flex justify-evenly px-8">
+      <div className="lg:flex justify-evenly px-4">
         <div className="mt-10 mb-20">
           <h1 className="text-lg font-bold">Select today's exercise</h1>
           <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">

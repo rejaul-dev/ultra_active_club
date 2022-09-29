@@ -6,13 +6,26 @@ const Navbar = () => {
       <div>
         <div className="navbar bg-accent lg:px-16">
           <div className="flex-1">
-            <a href="/" className="text-xl font-bold text-white">Iron Bull Boxing Club</a>
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img
+                    src="https://img.icons8.com/ios-filled/344/bull.png"
+                    alt=""
+                  />
+                </div>
+              </label>
+            <a href="/" className="text-xl font-bold text-white">
+              Iron Bull Boxing Club
+            </a>
           </div>
           <div className="flex-none gap-2">
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img src="https://phero-web.nyc3.cdn.digitaloceanspaces.com/website-prod-images/public/files/1658988253573.png" alt="" />
+                  <img
+                    src="https://phero-web.nyc3.cdn.digitaloceanspaces.com/website-prod-images/public/files/1658988253573.png"
+                    alt=""
+                  />
                 </div>
               </label>
               <ul
