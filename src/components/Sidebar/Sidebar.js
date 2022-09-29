@@ -10,21 +10,22 @@ const Sidebar = ({ cart }) => {
     Swal.fire("Good job!", "Your Activity Completed!", "success");
   };
 
-  const [time, setTime] = useState([]);
+  const [time, setTime] = useState(0);
 
   const handleBreakTime = (event) => {
     setTime(event);
-    localStorage.setItem("breakTime", time);
+    localStorage.setItem("breakTime", event);
+    console.log(time);
   };
-  
+
   const getDataFromLocalStorage = () => {
     const savedTime = localStorage.getItem("breakTime", time);
     return savedTime;
   };
 
   useEffect(() => {
-    const previousTime = getDataFromLocalStorage()
-    setTime(previousTime)
+    const previousTime = getDataFromLocalStorage();
+    setTime(previousTime);
   }, []);
 
   return (
@@ -68,25 +69,25 @@ const Sidebar = ({ cart }) => {
             onClick={(event) => handleBreakTime(event.target.innerText)}
             className="rounded-full bg-white p-3 border-2 border-error hover:bg-error hover:text-white text-sm mr-5"
           >
-            <small>10m</small>
+            <p>10min</p>
           </button>
           <button
             onClick={(event) => handleBreakTime(event.target.innerText)}
             className="rounded-full bg-white p-3 border-2 border-error hover:bg-error hover:text-white text-sm mr-5"
           >
-            <small>20m</small>
+            <p>20min</p>
           </button>
           <button
             onClick={(event) => handleBreakTime(event.target.innerText)}
             className="rounded-full bg-white p-3 border-2 border-error hover:bg-error hover:text-white text-sm mr-5"
           >
-            <small>30m</small>
+            <p>30min</p>
           </button>
           <button
             onClick={(event) => handleBreakTime(event.target.innerText)}
             className="rounded-full bg-white p-3 border-2 border-error hover:bg-error hover:text-white text-sm "
           >
-            <small>40m</small>
+            <p>40min</p>
           </button>
         </div>
       </div>
