@@ -14,9 +14,6 @@ const Sidebar = ({ cart }) => {
       )
   }
 
-  
-
-
   return (
     <div className=" bg-base-100 shadow-xl rounded-xl px-8 ">
       <div className="flex justify-between items-center mt-20">
@@ -44,6 +41,7 @@ const Sidebar = ({ cart }) => {
           <p className="text-sm">Age</p>
         </div>
       </div>
+
       <div className="mt-10 font-bold mb-2">
         <h1>Take a break</h1>
         <div className="bg-slate-300 shadow-lg rounded-lg font-semibold p-4 ">
