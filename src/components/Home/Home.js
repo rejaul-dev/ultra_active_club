@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="lg:flex justify-evenly px-10">
+      <div className="lg:flex justify-evenly px-8">
         <div className="mt-10 mb-20">
           <h1 className="text-lg font-bold">Select today's exercise</h1>
           <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
@@ -38,7 +38,7 @@ const Home = () => {
           <Sidebar cart={cart}></Sidebar>
         </div>
       </div>
-      <div className="w-9/12 mx-auto mb-20">
+      <div className="w-9/12 mx-auto mt-10 mb-20">
       <Questions></Questions>
       </div>
     </div>
