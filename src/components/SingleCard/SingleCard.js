@@ -12,7 +12,7 @@ const SingleCard = (props) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
-          <p className="text-md font-bold">Time Required: {time}m</p>
+          <p className="text-md font-bold">Time Required: {time}min</p>
           <button onClick={()=>handleAddToList(cardInfo)} className="btn btn-default hover:bg-accent">
             Add to list
           </button>

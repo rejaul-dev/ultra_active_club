@@ -17,6 +17,7 @@ const Home = () => {
     console.log(cardInfo);
     const newCart = [...cart, cardInfo];
     setCart(newCart);
+
   };
 
   return (
@@ -32,45 +33,12 @@ const Home = () => {
             ></SingleCard>
           ))}
         </div>
-
-        {/* question part */}
-        <div
-          tabIndex={0}
-          className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-16"
-        >
-          <div className="collapse-title text-xl font-medium">
-            Focus me to see content
-          </div>
-          <div className="collapse-content">
-            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
-          </div>
-        </div>
-        <div
-          tabIndex={0}
-          className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-4"
-        >
-          <div className="collapse-title text-xl font-medium">
-            Focus me to see content
-          </div>
-          <div className="collapse-content">
-            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
-          </div>
-        </div>
-        <div
-          tabIndex={0}
-          className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-4"
-        >
-          <div className="collapse-title text-xl font-medium">
-            Focus me to see content
-          </div>
-          <div className="collapse-content">
-            <p>tabIndex={0} attribute is necessary to make the div focusable</p>
-          </div>
-        </div>
-
+            <div>
+              <Questions></Questions>
+            </div>
       </div>
 
-      <div className="">
+      <div className="mt-10">
         <Sidebar cart={cart}></Sidebar>
       </div>
     </div>
