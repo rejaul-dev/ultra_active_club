@@ -7,18 +7,18 @@ const Sidebar = ({ cart }) => {
   }
   return (
     <div className=" bg-base-100 shadow-xl rounded-xl px-8 ">
-      <div className="flex justify-evenly items-center mt-20">
+      <div className="flex justify-between items-center mt-20">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
             <img src="https://placeimg.com/80/80/people" alt="" />
           </div>
         </label>
-        <div>
+        <div className="text-md font-bold">
           <h2>Rejaul Karim Rabbi</h2>
           <p>Kuala Lumpur</p>
         </div>
       </div>
-      <div className="flex justify-evenly bg-slate-300 shadow-lg rounded-lg font-semibold p-4 mt-10">
+      <div className="flex justify-between bg-slate-300 shadow-lg rounded-lg font-semibold p-4 mt-10">
         <div>
           <h5>70kg</h5>
           <p className="text-sm">Weight</p>
