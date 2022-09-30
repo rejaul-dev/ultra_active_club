@@ -6,7 +6,7 @@ const SingleCard = (props) => {
 
   return (
     <div>
-      <div className="card card-compact w-80 bg-base-100 shadow-xl">
+      <div className="card card-compact w-80 mx-auto bg-base-100 shadow-xl">
         <figure className="px-4 pt-4 ">
           <img className="rounded-lg h-[200px]" src={img} alt="Shoes" />
         </figure>
